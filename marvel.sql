@@ -64,70 +64,9 @@ UPDATE people SET name = 'Chae Nicholson'  WHERE name = 'Shae Nicholsun';
 DELETE FROM movies WHERE title = 'Batman Begins';
 DELETE FROM people WHERE name = 'Harrison Booth';
 
+-- INSERT INTO people (name) VALUES ('Yahoo Name1!'), ('Woohoo Name2’);
+DELETE FROM movies WHERE year = '2011';
+
 SELECT * FROM movies;
 SELECT name FROM people;
 SELECT * FROM people WHERE name = 'Simon Hall';
-
-
-
-
-
--- # SQL Homework
---
--- The local cinema are having a Marvel Movie Marathon! They have asked you to help maintain their database of movies with times and attendees.
---
--- ## To access the database:
---
--- #1. DONE. First, create a database called 'marvel'
---
--- ```
--- #2. DONE. terminal
--- createdb marvel
--- ```
---
--- #3. DONE. Next, run the provided SQL script to populate your database:
---
--- ```
--- #4. DONE. terminal
--- psql -d marvel -f marvel.sql
--- ```
---
--- Use the supplied data as the source of data to answer the questions. Copy the SQL command you have used to get the answer, and paste it below the question, along with the result they gave.
---
--- ## Questions
---
--- 1.  #DONE. Return ALL the data in the 'movies' table.
--- SELECT * FROM movies;
-
--- 2.  #DONE. Return ONLY the name column from the 'people' table
---SELECT name FROM people;
-
-
--- 3.  #DONE. Oops! Someone at CodeClan spelled Chae's name wrong! Change it to reflect the proper spelling ('Shae Nicholsun' should be 'Chae Nicholson').
---UPDATE people SET name = 'Chae Nicholson'  WHERE name = 'Shae Nicholsun';
-
--- 4.  #DONE. Return ONLY your name from the 'people' table.
---SELECT * FROM people WHERE name = 'Simon Hall';
-
--- 5.  #DONE. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
---DELETE FROM movies WHERE title = 'Batman Begins';
-
--- 6.  #DONE. Create a new entry in the 'people' table with the name of one of the instructors.
---INSERT INTO people (name) VALUES ('Captain Code Craig Morton');
-
-
--- 7.  #DONE. Harrison Booth has decided to hijack our movie evening, Remove him from the table of people.
---DELETE FROM people WHERE name = 'Harrison Booth';
-
--- 8.  #DONE. The cinema has just heard that they will be holding an exclusive midnight showing of 'Captain Marvel'!! Create a new entry in the 'movies' table to reflect this.
---INSERT INTO movies (title, year, show_time) VALUES ('Captain Marvel', 2019, '24:00');
-
-
--- 9. #DONE. The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
---UPDATE movies SET show_time = '01:40' WHERE title = 'Guardians of the Galaxy 2';
-
-
-
--- ## Extension
---
--- 1.  Research how to delete multiple entries from your table in a single command.
